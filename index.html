@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benvenutə / Bienvenu·e</title>
+    <title>Benvenuto.a / Bienvenu.e</title>
 
     <style>
         body {
@@ -11,52 +11,53 @@
             margin: 0; padding: 0;
             background: #fafafa;
         }
+
         header {
             background: linear-gradient(135deg, #1a73e8, #004aad);
             color: white;
-            padding: 30px;
+            padding: 35px;
             text-align: center;
         }
+
+        h1 { margin: 0; }
+        h2 { margin-top: 40px; }
+
         nav {
-            background: #ffffff;
             padding: 20px;
-            border-bottom: 1px solid #ddd;
         }
-        nav ul {
-            list-style: none; padding: 0; margin: 0;
-            display: flex; flex-direction: column;
-            gap: 10px;
+
+        .section-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-top: 30px;
+            color: #333;
         }
-        nav li a {
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        a {
             text-decoration: none;
-            font-size: 18px;
             color: #1a73e8;
+            font-size: 18px;
             padding: 8px 12px;
             border-radius: 6px;
         }
-        nav li a:hover {
+
+        a:hover {
             background: #e8f0fe;
         }
+
         main {
             padding: 25px;
-        }
-        h1, h2 {
-            margin-top: 0;
-        }
-
-        /* Responsive */
-        @media (min-width: 700px) {
-            nav ul {
-                flex-direction: row;
-                flex-wrap: wrap;
-            }
-            nav li a {
-                background: #f2f2f2;
-                margin-right: 10px;
-            }
-            nav li a:hover {
-                background: #e8f0fe;
-            }
         }
     </style>
 </head>
@@ -64,29 +65,33 @@
 <body>
 
 <header>
-    <h1>Benvenutə / Bienvenu·e</h1>
-    <p>Scegli / Choisis une page per accedere alle informazioni</p>
+    <h1>Benvenuto.a / Bienvenu.e</h1>
+    <p>Scegli la lingua · Choisis la langue</p>
 </header>
 
 <nav>
+
+    <div class="section-title">🇮🇹 Italiano</div>
     <ul>
-        <li><a href="visa-india-it.html">🇮🇹 Istruzioni VISA India</a></li>
-        <li><a href="visa-india-fr.html">🇫🇷 Instructions VISA Inde</a></li>
-
-        <li><a href="dresscode-it.html">🇮🇹 Dress Code</a></li>
-        <li><a href="dresscode-fr.html">🇫🇷 Code vestimentaire</a></li>
-
-        <li><a href="consigli-it.html">🇮🇹 Consigli pratici di viaggio</a></li>
-        <li><a href="consigli-fr.html">🇫🇷 Conseils pratiques de voyage</a></li>
+        <li>visa-india-it.html Istruzioni VISA India</a></li>
+        <li>dresscode-it.html Dress code</a></li>
+        <li>consigli-it.html Consigli pratici di viaggio</a></li>
     </ul>
+
+    <div class="section-title">🇫🇷 Français</div>
+    <ul>
+        <li>visa-india-fr.html Instructions VISA Inde</a></li>
+        <li>dresscode-fr.html Dress code</a></li>
+        <li>consigli-fr.html Conseils pratiques de voyage</a></li>
+    </ul>
+
 </nav>
 
 <main>
-    <h2>Benvenutə / Bienvenu·e nella pagina principale</h2>
+    <h2>Benvenuto.a / Bienvenu.e nella pagina principale</h2>
     <p>
-        Usa il menu qui sopra per accedere a tutte le informazioni importanti.  
-        <br>
-        Utilise le menu ci-dessus pour accéder aux informations.
+        Usa il menu per accedere ai contenuti.<br>
+        Utilise le menu pour accéder aux contenus.
     </p>
 </main>
 
