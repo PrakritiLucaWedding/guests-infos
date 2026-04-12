@@ -3,64 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benvenuto.a</title>
+    <title>Benvenutə / Bienvenu·e</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
+            margin: 0; padding: 0;
+            background: #fafafa;
         }
         header {
-            background: #1a73e8;
+            background: linear-gradient(135deg, #1a73e8, #004aad);
             color: white;
-            padding: 20px;
+            padding: 30px;
             text-align: center;
         }
         nav {
-            background: #f2f2f2;
-            padding: 15px;
+            background: #ffffff;
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
         }
         nav ul {
-            list-style: none;
-            padding: 0;
+            list-style: none; padding: 0; margin: 0;
+            display: flex; flex-direction: column;
+            gap: 10px;
         }
-        nav li {
-            margin: 8px 0;
-        }
-        nav a {
+        nav li a {
             text-decoration: none;
-            color: #1a73e8;
             font-size: 18px;
+            color: #1a73e8;
+            padding: 8px 12px;
+            border-radius: 6px;
         }
-        nav a:hover {
-            text-decoration: underline;
+        nav li a:hover {
+            background: #e8f0fe;
         }
         main {
-            padding: 20px;
+            padding: 25px;
+        }
+        h1, h2 {
+            margin-top: 0;
+        }
+
+        /* Responsive */
+        @media (min-width: 700px) {
+            nav ul {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            nav li a {
+                background: #f2f2f2;
+                margin-right: 10px;
+            }
+            nav li a:hover {
+                background: #e8f0fe;
+            }
         }
     </style>
 </head>
+
 <body>
 
 <header>
-    <h1>Benvenuto</h1>
-    <p>Seleziona una pagina dal menu</p>
+    <h1>Benvenutə / Bienvenu·e</h1>
+    <p>Scegli / Choisis une page per accedere alle informazioni</p>
 </header>
 
 <nav>
     <ul>
-        <li>Istruzioni VISA India (IT)</a></li>
-        <li>visa-india-fr.htmlIstruzioni VISA India (FR)</a></li>
-        <li>dresscode-it.htmlDress Code (IT)</a></li>
-        <li>dresscode-fr.htmlDress Code (FR)</a></li>
-        <li>consigli-it.htmlConsigli pratici viaggio (IT)</a></li>
-        <li>consigli-fr.htmlConsigli pratici viaggio (FR)</a></li>
+        <li><a href="visa-india-it.html">🇮🇹 Istruzioni VISA India</a></li>
+        <li><a href="visa-india-fr.html">🇫🇷 Instructions VISA Inde</a></li>
+
+        <li><a href="dresscode-it.html">🇮🇹 Dress Code</a></li>
+        <li><a href="dresscode-fr.html">🇫🇷 Code vestimentaire</a></li>
+
+        <li><a href="consigli-it.html">🇮🇹 Consigli pratici di viaggio</a></li>
+        <li><a href="consigli-fr.html">🇫🇷 Conseils pratiques de voyage</a></li>
     </ul>
 </nav>
 
 <main>
-    <h2>Benvenuto nella pagina principale</h2>
-    <p>Usa il menu per accedere alle diverse informazioni.</p>
+    <h2>Benvenutə / Bienvenu·e nella pagina principale</h2>
+    <p>
+        Usa il menu qui sopra per accedere a tutte le informazioni importanti.  
+        <br>
+        Utilise le menu ci-dessus pour accéder aux informations.
+    </p>
 </main>
 
 </body>
