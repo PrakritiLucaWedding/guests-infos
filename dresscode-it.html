@@ -24,11 +24,24 @@
             color: white;
         }
         main {
-            height: calc(100vh - 70px);
+            padding: 25px;
         }
-        embed {
+
+        .pdf-container {
+            width: 100%;
+            max-width: 900px;
+            height: 600px;
+            margin: auto;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        iframe {
             width: 100%;
             height: 100%;
+            border: none;
         }
     </style>
 </head>
@@ -42,13 +55,11 @@
 </header>
 
 <main>
-    <embed src="PDFs/Dresscode_IT_compressed.pdf" type="application/pdf">
-    
-    <!-- fallback -->
-    <p style="padding:20px;">
-        Il PDF non può essere visualizzato. 
-        <a href="PDFs/Dresscode_IT_compressed.pdf">Scaricalo qui</a>.
-    </p>
+
+    <div class="pdf-container">
+        <iframe src="PDFs/Dresscode_IT_compressed.pdf"></iframe>
+    </div>
+
 </main>
 
 </body>
