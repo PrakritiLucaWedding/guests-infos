@@ -1,11 +1,79 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>Dress Code (FR)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dresscode (IT)</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; padding: 0;
+        }
+        header {
+            background: #1a73e8;
+            padding: 15px;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        header a {
+            text-decoration: none;
+            font-size: 25px;
+            color: white;
+        }
+        main {
+            padding: 25px;
+        }
+
+        .pdf-container {
+            width: 100%;
+            max-width: 900px;
+            height: 600px;
+            margin: auto;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Dress Code (Français)</h1>
-    <p>Insérez ici le contenu…</p>
+
+<header>
+    <a href="index.html">🏠</a>
+    <a href="javascript:history.back()">⬅️</a>
+    <h2 style="margin:0;">Dresscode (IT)</h2>
+</header>
+
+<main>
+
+<div style="
+    width:100%;
+    max-width:900px;
+    height:600px;
+    margin:auto;
+    border:2px solid #ccc;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+">
+    <embed 
+        src="PDFs/Dresscode_FR_compressed.pdf"
+        type="application/pdf"
+        width="100%" 
+        height="100%">
+</div>
+
+</main>
+
 </body>
 </html>
