@@ -24,13 +24,11 @@
             color: white;
         }
         main {
-            padding: 0;
             height: calc(100vh - 70px);
         }
-        iframe {
+        embed {
             width: 100%;
             height: 100%;
-            border: none;
         }
     </style>
 </head>
@@ -44,7 +42,13 @@
 </header>
 
 <main>
-    <iframe src="PDFs/Dresscode_IT_compressed.pdf"></iframe>
+    <embed src="PDFs/Dresscode_IT_compressed.pdf" type="application/pdf">
+    
+    <!-- fallback -->
+    <p style="padding:20px;">
+        Il PDF non può essere visualizzato. 
+        <a href="PDFs/Dresscode_IT_compressed.pdf">Scaricalo qui</a>.
+    </p>
 </main>
 
 </body>
